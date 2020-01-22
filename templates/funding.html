@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Account Balance
+{% endblock %}
+
+{% block main %}
+    <form action="/addfunds" method="post">
+        <div class="form-group">
+            <input class="form-control" name="quantity" placeholder="Quantity" type="number" required/>
+        </div>
+        <button class="btn btn-primary" type="submit">Add Cash</button>
+    </form>
+{% endblock %}
